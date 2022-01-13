@@ -38,7 +38,7 @@ public class Block {
             hash = calculateBlockHash();
         }
         long endTime=System.currentTimeMillis();
-        logger.info("Time taken to mine the Block: "+(endTime-startTime)+" milliseconds");
+        logger.info("Time taken to mine the Block: "+(endTime-startTime)+" milliseconds ");
         logger.info("The Block was: "+this.toString());
         return hash;
     }

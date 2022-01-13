@@ -22,7 +22,7 @@ public class BlockchainUnitTest {
         Block genesisBlock = new Block("The is the Genesis Block.", "0", new Date().getTime());
         genesisBlock.mineBlock(prefix);
         blockchain.add(genesisBlock);
-        Block firstBlock = new Block("The is the First Block.", genesisBlock.getHash(), new Date().getTime());
+        Block firstBlock = new Block("The is the First Block. ", genesisBlock.getHash(), new Date().getTime());
         firstBlock.mineBlock(prefix);
         blockchain.add(firstBlock);
     }
